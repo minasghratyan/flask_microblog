@@ -17,7 +17,7 @@ def load_user(id):
 
 @babel.localeselector
 def get_locale():
-    return 'es' #request.accept_languages.best_match(LANGUAGES.keys())
+    return request.accept_languages.best_match(LANGUAGES.keys())
 
 
 @app.before_request
